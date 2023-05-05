@@ -1,0 +1,258 @@
+@import "base";
+@import "layout";
+@import "fonts";
+
+//public
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//End public
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Topmenu
+.container_fluid{
+    @include flex-center;
+    .container{
+        @include flex-center;
+        width: 90%;
+        margin-top: $margin-top;
+        .topmenu{
+            @include flex-center;
+            padding-right: $padding-right;
+            width: 100%;
+            height: 35px;
+            background: $medium-color;
+            .topmenu_right{
+                width: 50%;
+                margin-left: $margin-left;
+                .fa{
+                    margin-left: -30px;
+                    color:$gray-color;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                input{
+                    border: none;
+                    color: $white-color;
+                    margin-top: 2px;   
+                    border-radius: 5px;
+                    width: 200px;
+                    height: 25px;
+                    padding-left: 10px;
+                    color: $black-color
+                }
+               
+            }
+            .topmenu_left{
+                @include flex-right;
+                width: 50%;
+                direction: rtl;
+                a{
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background: $light-color;
+                    padding-right: 7px;
+                    padding-top: 5px;
+                    &:hover{
+                        background: lighten($color: $light-color, $amount: 20%);
+                    }
+                }
+            }
+        }
+    }
+}
+// End Topmenu
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Navbar
+.Navbar{
+    @include flex-center;
+    width: 100%;
+    background: $light-color;
+    .Navbar_right{
+        width: 40%;
+        padding-left: $padding-left;
+        h1{
+            color: $dark-color;
+        }
+    }
+    .Navbar_left{
+        width: 60%;
+        ul{
+            @include flex-right;
+            list-style: none;
+            li{
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color: $black-color;
+                    font-weight: bolder;
+                    &:hover{
+                        color: $medium-color;
+                    }
+                }
+                .contact{
+                    color: $dark-color;
+                    border-bottom: 2px solid $dark-color;
+                }
+            }
+           
+        }
+    }
+}
+// End Navbar
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Title
+.contact{
+    @include flex-center;
+    gap: 10px;
+    width: 100%;
+    .contact_right{
+        width: 45%;
+        h2{
+            color: $dark-color;
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+        a{
+            display: flex;
+            text-decoration: none;
+            color: $black-color;
+            background-color: $medium-color;
+            opacity: 0.8;
+            height: 40px;
+            border-radius: 10px;
+            padding-left: 15px;
+            padding-top: 5px;
+            span{
+                padding-top: 5px;
+                margin-left: 10px;
+            }
+        }
+        .fa{
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            background: $light-color;
+            padding-left: 8px;
+            padding-top: 6px;
+            &:hover{
+                background: lighten($color: $light-color, $amount: 20%);
+            }
+        
+        }
+        .sa{
+            padding-left: 10px;
+            padding-top: 7px;
+        }
+
+        textarea{
+            background: $medium-color;
+            opacity: 0.8;
+            margin-top: 35px;
+            height: 40px;
+            border-radius: 10px;
+            padding-left: 10px;
+            padding-top: 12px;
+            font-weight: bolder;
+            border: none;
+        }
+
+        .styleBox{
+            width: 305px;
+            background-color: $medium-color;
+            opacity: 0.8;
+            border-radius: 10px;
+            padding-left: 10px;
+            margin-top: 30px;
+            font-weight: bolder;
+            border: none;
+            margin-left: 140px;
+        }
+
+        button{
+            background: $light-color;
+            border: none;
+            width: 70px;
+            height: 25px;
+            border-radius: 5px;
+            margin-top: 15px;
+            margin-left: 250px;
+            &:hover{
+                background: lighten($color: $light-color, $amount: 20%);
+                cursor: pointer;
+            }
+        }
+        .btn{
+            width: 100px;
+            margin-left: 240px;
+        }
+
+        #locInfo{
+            padding-top: 10px;
+            display: none;
+        }
+    }
+    .contact_left{
+        width: 55%;
+        img{
+            width: 100%;
+        }
+    }
+
+    
+}
+// End Title
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Information
+.information{
+    width: 100%;
+    .information_top{
+        height: 150px;
+        text-align: center;
+        padding-top: 50px;
+        background:$medium-color;
+        ul{
+            @include flex-center;
+            list-style: none;
+            li{
+                margin-right: 15px;
+                .link{
+                    display: flex;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background: $light-color;
+                    padding-left: 7px;
+                    padding-top: 7px;
+                    margin-bottom: 10px;
+                    color: $white-color;
+                    text-decoration: none;
+                    &:hover{
+                        background: lighten($color: $light-color, $amount: 20%);
+                    }
+                }
+                a{
+                    color: $white-color;
+                    text-decoration: none;
+                    &:hover{
+                        color: $light-color;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+    
+    .information_bottom{
+        height: 45px;
+        text-align: center;
+        background: $light-color;
+        color: $white-color;
+        padding-top: 12px;
+    }
+}
+
+// End Information

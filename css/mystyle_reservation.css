@@ -1,0 +1,384 @@
+.text-white {
+  color: #fff;
+}
+
+@font-face {
+  font-family: "primary-font";
+  src: url("../../fonts/farsi-fonts/iran-yekan-500.eot");
+  src: url("../../fonts/farsi-fonts/iran-yekan-500.eot?#iefix") format("embedded-opentype"), url("../../fonts/farsi-fonts/iran-yekan-500.woff2") format("woff2"), url("../../fonts/farsi-fonts/iran-yekan-500.woff") format("woff"), url("../../fonts/farsi-fonts/iran-yekan-500.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "secondary-font";
+  src: url("../../fonts/farsi-fonts/iran-sans-700.eot");
+  src: url("../../fonts/farsi-fonts/iran-sans-700.eot?#iefix") format("embedded-opentype"), url("../../fonts/farsi-fonts/iran-sans-700.woff2") format("woff2"), url("../../fonts/farsi-fonts/iran-sans-700.woff") format("woff"), url("../../fonts/farsi-fonts/iran-sans-700.ttf") format("truetype");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Glyphicons Halflings";
+  src: url("../fonts/glyphicons-halflings-regular.eot");
+  src: url("../fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Material Design Icons";
+  src: url("../fonts/materialdesignicons-webfont.eot?v=1.4.57");
+  src: url("../fonts/materialdesignicons-webfont.eot?#iefix&v=1.4.57") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff2?v=1.4.57") format("woff2"), url("../fonts/materialdesignicons-webfont.woff?v=1.4.57") format("woff"), url("../fonts/materialdesignicons-webfont.ttf?v=1.4.57") format("truetype"), url("../fonts/materialdesignicons-webfont.svg?v=1.4.57#materialdesigniconsregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Thin Regular";
+  src: url("../fonts/Thin-Regular.eot?66413286");
+  src: url("../fonts/Thin-Regular.eot?66413286#iefix") format("embedded-opentype"), url("../fonts/Thin-Regular.woff?66413286") format("woff"), url("../fonts/Thin-Regular.ttf?66413286") format("truetype"), url("../fonts/Thin-Regular.svg?66413286#thin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Restaurant Regular";
+  src: url("../fonts/Restaurant-Regular.eot?87209526");
+  src: url("../fonts/Restaurant-Regular.eot?87209526#iefix") format("embedded-opentype"), url("../fonts/Restaurant-Regular.woff?87209526") format("woff"), url("../fonts/Restaurant-Regular.ttf?87209526") format("truetype"), url("../fonts/Restaurant-Regular.svg?87209526#mercury") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container_fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container_fluid .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  margin-top: 15px;
+}
+.container_fluid .container .topmenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15px;
+  width: 100%;
+  height: 35px;
+  background: #4169E1;
+}
+.container_fluid .container .topmenu .topmenu_right {
+  width: 50%;
+  margin-left: 15px;
+}
+.container_fluid .container .topmenu .topmenu_right .fa {
+  margin-left: -30px;
+  color: gray;
+}
+.container_fluid .container .topmenu .topmenu_right .fa:hover {
+  cursor: pointer;
+}
+.container_fluid .container .topmenu .topmenu_right input {
+  border: none;
+  color: #fff;
+  margin-top: 2px;
+  border-radius: 5px;
+  width: 200px;
+  height: 25px;
+  padding-left: 10px;
+  color: #000;
+}
+.container_fluid .container .topmenu .topmenu_left {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+  direction: rtl;
+}
+.container_fluid .container .topmenu .topmenu_left a {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #00BFFF;
+  padding-right: 7px;
+  padding-top: 5px;
+}
+.container_fluid .container .topmenu .topmenu_left a:hover {
+  background: #66d9ff;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: #00BFFF;
+}
+.Navbar .Navbar_right {
+  width: 40%;
+  padding-left: 15px;
+}
+.Navbar .Navbar_right h1 {
+  color: #0000CD;
+}
+.Navbar .Navbar_left {
+  width: 60%;
+}
+.Navbar .Navbar_left ul {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  list-style: none;
+}
+.Navbar .Navbar_left ul li {
+  margin-right: 15px;
+}
+.Navbar .Navbar_left ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bolder;
+}
+.Navbar .Navbar_left ul li a:hover {
+  color: #4169E1;
+}
+.Navbar .Navbar_left ul li .reservation {
+  color: #0000CD;
+  border-bottom: 2px solid #0000CD;
+}
+
+.pic {
+  width: 50%;
+}
+.pic img {
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border-radius: 50px;
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+}
+.reservation .reservation_form1 {
+  width: 200%;
+  height: 400px;
+  background-color: #00BFFF;
+  border-radius: 5px;
+}
+.reservation .reservation_form2 {
+  width: 200%;
+  height: 400px;
+  background-color: #87CEFA;
+  border-radius: 5px;
+}
+.reservation .reservation_form3 {
+  width: 200%;
+  height: 400px;
+  background-color: #00BFFF;
+  border-radius: 5px;
+}
+.reservation .reservation_form4 {
+  width: 200%;
+  height: 400px;
+  background-color: #87CEFA;
+  border-radius: 5px;
+}
+.reservation h2 {
+  color: #0000CD;
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+.reservation .input {
+  width: 90%;
+  background-color: #4169E1;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  margin-left: 15px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.reservation label {
+  margin-left: 15px;
+}
+.reservation textarea {
+  background: #4169E1;
+  border: none;
+  border-radius: 5px;
+  padding-left: 5px;
+  padding-top: 9px;
+  margin-left: 15px;
+  width: 90%;
+  margin-top: 15px;
+}
+.reservation p {
+  padding-left: 5px;
+  margin-bottom: 15px;
+}
+.reservation .date {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: #4169E1;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.reservation .time {
+  margin-left: 15px;
+  margin-bottom: 10px;
+  width: 90%;
+  background-color: #4169E1;
+  padding-left: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 15px;
+  margin-bottom: 70px;
+  margin-left: 727px;
+  height: 25px;
+  width: 6%;
+  border: none;
+  border-radius: 5px;
+  background: #00BFFF;
+}
+button:hover {
+  background: #87CEFA;
+  cursor: pointer;
+}
+
+.style1 {
+  background-color: #87CEFA;
+  width: 400px;
+  height: 400px;
+  margin-right: 50px;
+}
+
+.style2 {
+  background-color: #87CEFA;
+  width: 400px;
+  height: 400px;
+  margin-left: 50px;
+}
+
+#leftBox {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-radius: 10px;
+}
+#leftBox .imgBox {
+  overflow: hidden;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 3px solid #0000CD;
+  border-radius: 10px;
+  width: 110px;
+  height: 105px;
+}
+#leftBox .imgBox img {
+  width: 100px;
+  height: 100px;
+}
+#leftBox .imgBox img:hover {
+  cursor: pointer;
+}
+
+#rightBox {
+  border-radius: 10px;
+}
+#rightBox div {
+  position: relative;
+  margin-top: 50px;
+  width: 350px;
+  height: 300px;
+  margin-left: 20px;
+}
+#rightBox div img {
+  width: 100%;
+  margin-top: 30px;
+  justify-content: center;
+}
+#rightBox div h4 {
+  color: #0000CD;
+}
+#rightBox .button {
+  height: 25px;
+  width: 100px;
+  margin-left: 150px;
+  border: none;
+  border-radius: 5px;
+  background: #00BFFF;
+  color: #0000CD;
+}
+#rightBox .button:hover {
+  background: #0000CD;
+  color: #00BFFF;
+  cursor: pointer;
+}
+
+.information {
+  width: 100%;
+}
+.information .information_top {
+  height: 150px;
+  text-align: center;
+  padding-top: 50px;
+  background: #4169E1;
+}
+.information .information_top ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+.information .information_top ul li {
+  margin-right: 15px;
+}
+.information .information_top ul li .link {
+  display: flex;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background: #00BFFF;
+  padding-left: 7px;
+  padding-top: 7px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.information .information_top ul li .link:hover {
+  background: #66d9ff;
+}
+.information .information_top ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.information .information_top ul li a:hover {
+  color: #00BFFF;
+  font-weight: bolder;
+}
+.information .information_bottom {
+  height: 45px;
+  text-align: center;
+  background: #00BFFF;
+  color: #fff;
+  padding-top: 12px;
+}/*# sourceMappingURL=mystyle_reservation.css.map */

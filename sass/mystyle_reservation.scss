@@ -1,0 +1,344 @@
+@import "base";
+@import "layout";
+@import "fonts";
+
+//public
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//End public
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Topmenu
+.container_fluid{
+    @include flex-center;
+    .container{
+        @include flex-center;
+        width: 90%;
+        margin-top: $margin-top;
+        .topmenu{
+            @include flex-center;
+            padding-right: $padding-right;
+            width: 100%;
+            height: 35px;
+            background: $medium-color;
+            .topmenu_right{
+                width: 50%;
+                margin-left: $margin-left;
+                .fa{
+                    margin-left: -30px;
+                    color:$gray-color;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                input{
+                    border: none;
+                    color: $white-color;
+                    margin-top: 2px;   
+                    border-radius: 5px;
+                    width: 200px;
+                    height: 25px;
+                    padding-left: 10px;
+                    color: $black-color
+                }
+               
+            }
+            .topmenu_left{
+                @include flex-right;
+                width: 50%;
+                direction: rtl;
+                a{
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background: $light-color;
+                    padding-right: 7px;
+                    padding-top: 5px;
+                    &:hover{
+                        background: lighten($color: $light-color, $amount: 20%);
+                    }
+                }
+            }
+        }
+    }
+}
+// End Topmenu
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Navbar
+.Navbar{
+    @include flex-center;
+    width: 100%;
+    background: $light-color;
+    .Navbar_right{
+        width: 40%;
+        padding-left: $padding-left;
+        h1{
+            color: $dark-color;
+        }
+    }
+    .Navbar_left{
+        width: 60%;
+        ul{
+            @include flex-right;
+            list-style: none;
+            li{
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color: $black-color;
+                    font-weight: bolder;
+                    &:hover{
+                        color: $medium-color;
+                    }
+                }
+                .reservation{
+                    color: $dark-color;
+                    border-bottom: 2px solid $dark-color;
+                }
+            }
+           
+        }
+    }
+}
+// End Navbar
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Reservation Form
+.pic{
+    width: 50%;
+    img{
+        width: 100%;
+        height: 400px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 50px
+    }
+}
+.reservation{
+    @include flex-center;
+    width: 100%;
+    gap:20px;
+    .reservation_form1{
+        width:200%;
+        height: 400px;
+        background-color: $light-color;
+        border-radius: 5px;   
+    }
+    .reservation_form2{
+        width:200%;
+        height: 400px;
+        background-color: $very-light-color;
+        border-radius: 5px;   
+    }
+    .reservation_form3{
+        width:200%;
+        height: 400px;
+        background-color: $light-color;
+        border-radius: 5px;   
+    }
+    .reservation_form4{
+        width:200%;
+        height: 400px;
+        background-color: $very-light-color;
+        border-radius: 5px;   
+    }
+    h2{
+        color: $dark-color;
+        text-align: center;
+        padding-top: $padding-top;
+        margin-bottom: $margin-bottom;
+    }
+    .input{
+        width: 90%;
+        background-color: $medium-color;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        margin-left: 15px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+        
+    }
+
+    label{
+        margin-left: $margin-left;
+    }
+    
+    textarea{
+        background: $medium-color;
+        border: none;
+        border-radius: 5px;
+        padding-left: 5px;
+        padding-top: 9px;
+        margin-left: $margin-left;
+        width: 90%;
+        margin-top: $margin-top;
+    }
+
+    p{
+        padding-left: 5px;
+        margin-bottom: $margin-bottom;
+    }
+
+    .date{
+        margin-left: $margin-left;
+        margin-bottom: 10px;
+        width: 90%;
+        background-color: $medium-color;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .time{
+        margin-left: $margin-left;
+        margin-bottom: 10px;
+        width: 90%;
+        background-color: $medium-color;
+        padding-left: 5px;
+        height: 30px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    
+}
+button{
+    margin-top: $margin-top;
+    margin-bottom: 70px;
+    margin-left: 727px;
+    height: 25px;
+    width: 6%;
+    border: none;
+    border-radius: 5px;
+    background: $light-color;
+    &:hover{
+        background: $very-light-color;
+        cursor: pointer;
+    }
+}
+
+.style1{
+    background-color: $very-light-color;
+    width: 400px;
+    height: 400px;
+    margin-right: 50px;
+}
+
+.style2{
+    background-color: $very-light-color;
+    width: 400px;
+    height: 400px;
+    margin-left: 50px;
+}
+
+#leftBox{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-radius: 10px;
+    .imgBox{
+        overflow: hidden;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border: 3px solid $dark-color;
+        border-radius: 10px;
+        width: 110px;
+        height: 105px;
+        img{
+            width: 100px;
+            height: 100px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#rightBox{
+    border-radius: 10px;
+    div{
+        position: relative;
+        margin-top: 50px;
+        width: 350px;
+        height: 300px;
+        margin-left: 20px;
+        img{
+            width: 100%;
+            margin-top: 30px;
+            justify-content: center;
+        }
+        h4{
+            color: $dark-color;
+        }
+    }
+    .button{
+        height: 25px;
+        width: 100px;
+        margin-left: 150px;
+        border: none;
+        border-radius: 5px;
+        background: $light-color;
+        color: $dark-color;
+        &:hover{
+            background: $dark-color;
+            color: $light-color;;
+            cursor: pointer;
+        }
+    }
+}
+
+// End Reservation Form
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Information
+.information{
+    width: 100%;
+    .information_top{
+        height: 150px;
+        text-align: center;
+        padding-top: 50px;
+        background:$medium-color;
+        ul{
+            @include flex-center;
+            list-style: none;
+            li{
+                margin-right: 15px;
+                .link{
+                    display: flex;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background: $light-color;
+                    padding-left: 7px;
+                    padding-top: 7px;
+                    margin-bottom: 10px;
+                    color: $white-color;
+                    text-decoration: none;
+                    &:hover{
+                        background: lighten($color: $light-color, $amount: 20%);
+                    }
+                }
+                a{
+                    color: $white-color;
+                    text-decoration: none;
+                    &:hover{
+                        color: $light-color;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+    
+    .information_bottom{
+        height: 45px;
+        text-align: center;
+        background: $light-color;
+        color: $white-color;
+        padding-top: 12px;
+    }
+}
+
+// End Information

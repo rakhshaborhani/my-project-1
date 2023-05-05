@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/mystyle_login&register.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="../images/car/favicon.png">
+    <title>Login & Register</title>
+</head>
+<body>
+     <!-- Topmenu -->
+     <div class="container_fluid">
+        <div class="container">
+            <div class="topmenu">
+                <div class="topmenu_right">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="topmenu_left">
+                    <apan>0011351779</apan>&nbsp;<a href=""><i class="fa fa-phone"></i></a>&nbsp; | &nbsp;<span>Car_Doctor@yahoo.com</span>&nbsp;<a href=""><i class="fa fa-envelope"> </i></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Topmenu -->
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Navbar -->
+    <div class="container_fluid">
+        <div class="container">
+            <div class="Navbar">
+                <div class="Navbar_right">
+                    <h1>Car Doctor</h1>
+                </div>
+                <div class="Navbar_left">
+                    <ul>
+                        <li><a href="/index.html" class="home">Home</a></li>
+                        <li><a href="../pages/contact.html" class="contact">Contact</a></li>
+                        <li><a href="../pages/about.html" class="about">About</a></li>
+                        <li><a href="../pages/reservation.html" class="reservation">Reservation</a></li>
+                        <li><a href="../pages/login&register.html" class="logreg">Login/Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Login & Register -->
+    <div class="container_fluid">
+        <div class="container">
+            <div class="main_div">
+                <div id="register" class="register">
+                    <div class="top_button">
+                        <button onclick="change_form(true)" class="reg" id="reg">Register</button>
+                    </div>
+                    <form id="register_form" novalidate="true">
+                        <div>
+                            <input type="text" placeholder="User Name" required class="input" id="user" data-label="Username" data-validation="notEmpty" autocomplete="off"><br>
+                            <div class="box" id="validate_uname"></div><br>
+                            <input type="password" placeholder="Password" required class="input" id="pass" data-label="Password" data-validation="notEmpty isPassword" autocomplete="off"><br>
+                            <div class="box" id="validate_password"></div><br>
+                            <input type="password" placeholder="Repeat Password" required class="input" id="repass" data-label="Repeat password" data-validation="notEmpty isMach" autocomplete="off"><br>
+                            <div class="box" id="validate_repassword"></div><br>
+                            <input type="submit" value="Register" id="button1">
+                        </div>
+                        <ul id="errorBox" class="erroebox">
+
+                        </ul>
+                    </form>
+                </div>
+                
+                <div id="login" class="login">
+                    <div class="top_button" id="input_button">
+                        <button onclick="change_form(false)" id="log">Login</button>
+                    </div>
+                    <div>
+                        <form>
+                            <input type="email" placeholder="Email" class="input" data-label="Email" data-validation="notEmpty isEmail" autocomplete="off"><br>
+                            <div class="box" id="validte_email"></div><br>
+                            <input type="password" placeholder="Password" required class="input" data-label="Password" data-validation="notEmpty isPassword" autocomplete="off"><br>
+                            <div class="box" id="validate_password"></div><br>
+                            <input type="submit" value="Login" id="button2">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Login & Register -->
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Information -->
+     <div class="container_fluid">
+        <div class="container">
+            <div class="information">
+                <div class="information_top">
+                    <div>
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank" class="link"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank" class="link"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://telegram.org/" target="_blank" class="link"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="https://twitter.com/home" target="_blank" class="link"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="https://www.whatsapp.com/" target="_blank" class="link"><i class="fa fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="./pages/contact.html">Contact</a></li>
+                            <li><a href="./pages/about.html">About</a></li>
+                            <li><a href="./pages/reservation.html">Reservation</a></li>
+                            <li><a href="./pages/login&register.html">Login&Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="information_bottom">Copyright : Rakhsha.b@yahoo.com</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Information -->  
+    <script src="../js/myscript_login&register.js"></script>
+</body>
+</html>

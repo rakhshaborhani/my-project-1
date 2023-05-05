@@ -1,0 +1,31 @@
+.link{
+    text-decoration: none;
+}
+
+
+@mixin button{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    background: $medium-color;
+    padding-left: 8px;
+    padding-top: 5px;
+    &:hover{
+        background-color: $dark-color;
+    }
+}
+
+@mixin backicon{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: $light-color;
+    padding-right: 7px;
+    padding-top: 5px;
+    &:hover{
+        background: lighten($color: $light-color, $amount: 20%);
+    }
+}

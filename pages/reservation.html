@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Reservation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/mystyle_reservation.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="image/x-icon" href="../images/car/favicon.png">
+    </head>
+    <body>
+        <!-- Topmenu -->
+    <div class="container_fluid">
+        <div class="container">
+            <div class="topmenu">
+                <div class="topmenu_right">
+                    <input type="text" placeholder="Search">
+                    <i class="fa fa-search"></i>
+                </div>
+                <div class="topmenu_left">
+                    <apan>0011351779</apan>&nbsp;<a href=""><i class="fa fa-phone"></i></a>&nbsp; | &nbsp;<span>Car_Doctor@yahoo.com</span>&nbsp;<a href=""><i class="fa fa-envelope"> </i></a> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Topmenu -->
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Navbar -->
+    <div class="container_fluid">
+        <div class="container">
+            <div class="Navbar">
+                <div class="Navbar_right">
+                    <h1>Car Doctor</h1>
+                </div>
+                <div class="Navbar_left">
+                    <ul>
+                        <li><a href="/index.html" class="home">Home</a></li>
+                        <li><a href="../pages/contact.html" class="contact">Contact</a></li>
+                        <li><a href="../pages/about.html" class="about">About</a></li>
+                        <li><a href="../pages/reservation.html" class="reservation">Reservation</a></li>
+                        <li><a href="../pages/login&register.html" class="logreg">Login/Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Navbar -->
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Reservation Form -->
+    <div class="container_fluid">
+        <div class="container"  id="picBox">
+            <div class="pic">
+                <img src="../images/man/smiling-auto-mechanic-with-wrench-standing-hands-folded-white-background_662251-2939.webp">
+            </div>
+        </div>
+    </div>
+    <div class="container_fluid">
+        <div class="container">
+            <div class="reservation">
+                <div class="reservation_form1">
+                    <h2>Personal Information</h2>
+                    <input type="text" placeholder="First Name" class="input" id="fname" required><br>
+                    <input type="text" placeholder="Last Name" class="input" id="lname" required><br>
+                    <input type="text" placeholder="National Code" class="input"><br>
+                    <input type="text" placeholder="Phone Number" class="input"><br>
+                    <input type="email" placeholder="Email" class="input">
+                </div>
+                <div class="reservation_form2">
+                    <h2>Car Information</h2>
+                    <input type="text" placeholder="Car Name" class="input" id="cname" required><br>
+                    <input type="text" placeholder="Car Model" class="input"><br>
+                    <input type="text" placeholder="Car Color" class="input"><br>
+                    <input type="text" placeholder="Car Number Plates" class="input"><br>
+                    <input type="text" placeholder="Car Chassis Number" class="input">
+                </div>
+                <div class="reservation_form3">
+                    <h2>Car Problem</h2>
+                    <label for="problem1">Mechanical</label>
+                    <input type="checkbox" id="problem1" checked><br>
+                    <label for="problem2">Electrical</label>
+                    <input type="checkbox" id="problem2"><br>
+                    <label for="problem3">Undercarriage</label>
+                    <input type="checkbox" id="problem3"><br>
+                    <label for="problem4">Smoothing & Painting</label>
+                    <input type="checkbox" id="problem4"><br>
+                    <label for="problem5">Other</label>
+                    <input type="checkbox" id="problem5"><br>
+                    <textarea cols="35" role="20" placeholder="Description"></textarea>
+                </div>
+                <div class="reservation_form4">
+                    <h2>Reservation Time</h2>
+                    <p>Reservation time is 7:00 AM to 11:30 AM and 1:00 PM to 5:00 PM, except on holidays.</p>
+                    <input type="date" class="date" id="date" required><br>
+                    <input type="time" class="time" id="time" required><br>
+                </div>     
+            </div>   
+        </div>
+    </div>
+    <button type="button" id="btn">Reservation</button> 
+    <div class="container_fluid">
+        <div class="container">
+            <div id="resBox"></div>
+        </div>
+    </div>
+
+    <div class="container_fluid">
+        <div class="container">
+            <div id="leftBox">
+                <div class="imgBox" id="itemDrag">
+                    <img id="pic10">
+                    <img id="pic11">
+                </div>
+                <div class="imgBox">
+                    <img id="pic20">
+                    <img id="pic21">
+                </div>
+                <div class="imgBox">
+                    <img id="pic30">
+                    <img id="pic31">
+                </div>
+                <div class="imgBox">
+                    <img id="pic40">
+                    <img id="pic41">
+                </div>
+                <div class="imgBox">
+                    <img id="pic50">
+                    <img id="pic51">
+                </div>
+                <div class="imgBox">
+                    <img id="pic60">
+                    <img id="pic61">
+                </div>
+                <div class="imgBox">
+                    <img id="pic70">
+                    <img id="pic71">
+                </div>
+                <div class="imgBox">
+                    <img id="pic80">
+                    <img id="pic81">
+                </div>
+                <div class="imgBox">
+                    <img id="pic90">
+                    <img id="pic91">
+                </div>
+            </div>
+
+            <div id="rightBox" >
+                <div id="dropBox" ondrop="onDrop(event);" ondragover="allowDrop(event)">
+                    <h4>Drag The Image Of Your Car Brand Into This Box</h4>
+                </div>
+                <input type="button" value="Upload" class="button">
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- End Reservation Form -->
+    <!-- ---------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- Information -->
+     <div class="container_fluid">
+        <div class="container">
+            <div class="information">
+                <div class="information_top">
+                    <div>
+                        <ul>
+                            <li><a href="https://www.facebook.com" target="_blank" class="link"><i class="fa fa-facebook-square"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank" class="link"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://telegram.org/" target="_blank" class="link"><i class="fa fa-telegram"></i></a></li>
+                            <li><a href="https://twitter.com/home" target="_blank" class="link"><i class="fa fa-twitter-square"></i></a></li>
+                            <li><a href="https://www.whatsapp.com/" target="_blank" class="link"><i class="fa fa-whatsapp"></i></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="./pages/contact.html">Contact</a></li>
+                            <li><a href="./pages/about.html">About</a></li>
+                            <li><a href="./pages/reservation.html">Reservation</a></li>
+                            <li><a href="./pages/login&register.html">Login&Register</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+                <div class="information_bottom">Copyright : Rakhsha.b@yahoo.com</div>
+            </div>
+        </div>
+    </div>
+    <!-- End Information -->  
+
+
+    <script src="../js/mystyle_reservation.js"></script>
+    </body>
+</html>

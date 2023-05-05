@@ -1,0 +1,44 @@
+{
+    "repair_groups":[
+        {
+            "group_id": 1,
+            "group_repair": "electrical",
+            "group_link": "./pages/electrical.html"
+        },
+        {
+            "group_id": 2,
+            "group_repair": "mechanical",
+            "group_link": "./pages/mechanical.html"
+        },
+        {
+            "group_id": 3,
+            "group_repair": "poolishing",
+            "group_link": "./pages/poolishing.html"
+        },
+        {
+            "group_id": 4,
+            "group_repair": "oilchange",
+            "group_link": "./pages/oilchange.html"
+        },
+        {
+            "group_id": 5,
+            "group_repair": "carexpert",
+            "group_link": "./pages/carexpert.html"
+        },
+        {
+            "group_id": 6,
+            "group_repair": "ceramic",
+            "group_link": "./pages/ceramic.html"
+        },
+        {
+            "group_id": 7,
+            "group_repair": "undercarriage",
+            "group_link": "./pages/undercarriage.html"
+        },
+        {
+            "group_id": 8,
+            "group_repair": "carequipment",
+            "group_link": "./pages/carequipment.html"
+        }
+    ]
+}

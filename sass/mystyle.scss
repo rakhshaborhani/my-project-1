@@ -1,0 +1,536 @@
+@import "base";
+@import "layout";
+@import "fonts";
+
+//public
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+//End public
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Topmenu
+.container_fluid{
+    @include flex-center;
+    .container{
+        @include flex-center;
+        width: 90%;
+        margin-top: $margin-top;
+        .search-result-box{
+            background-color: $very-light-color;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            .search-box-title{
+                color: $dark-color;
+            }
+            .link{
+                display: flex;
+                justify-content: center;
+                margin-left: 640px;
+                width: 100px;
+                height: 20px;
+                text-decoration: none;
+                color: $white-color;
+                background-color: $dark-color;
+                border-radius: 5px;
+                margin-bottom: 7px;
+            }
+        }
+        .topmenu{
+            @include flex-center;
+            padding-right: $padding-right;
+            width: 100%;
+            height: 35px;
+            background: $medium-color;
+            .topmenu_right{
+                width: 50%;
+                margin-left: $margin-left;
+                .fa{
+                    margin-left: -30px;
+                    color:$gray-color;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+                input{
+                    border: none;
+                    color: $white-color;
+                    margin-top: 2px;   
+                    border-radius: 5px;
+                    width: 200px;
+                    height: 25px;
+                    padding-left: 10px;
+                    color: $black-color
+                }
+                .link{
+                    color: #000;
+                    text-decoration: none
+                }
+            }
+            .topmenu_left{
+                @include flex-right;
+                width: 50%;
+                direction: rtl;
+                a{
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background: $light-color;
+                    padding-right: 7px;
+                    padding-top: 5px;
+                    &:hover{
+                        background: lighten($color: $light-color, $amount: 20%);
+                    }
+                }
+            }
+        }
+    }
+}
+// End Topmenu
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Navbar
+.Navbar{
+    @include flex-center;
+    width: 100%;
+    background: $light-color;
+    .Navbar_right{
+        width: 40%;
+        padding-left: $padding-left;
+        h1{
+            color: $dark-color;
+        }
+    }
+    .Navbar_left{
+        width: 60%;
+        ul{
+            @include flex-right;
+            list-style: none;
+            li{
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color: $black-color;
+                    font-weight: bolder;
+                    &:hover{
+                        color: $medium-color;
+                    }
+                }
+                .home{
+                    color: $dark-color;
+                    border-bottom: 2px solid $dark-color;
+                }
+            }
+           
+        }
+    }
+}
+// End Navbar
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Banner
+.banner{
+    @include flex-space-between;
+    width: 100%;
+    gap:10px;
+    #slider{
+        width: 65%;
+        height: 500px;
+        position: relative;
+        box-shadow: 0 0 6px #000;
+        img{
+            width: 100%;
+            height: 500px;
+        }
+    }
+    .slide{
+        display: none;
+    }
+    .active{
+        display: block;
+    }
+    .prev,.next{
+        font-size: 40px;
+        text-decoration: none;
+        color: #000;
+        position: absolute;
+        top: 45%;
+        font-weight: 700;
+    }
+    .prev{
+        left: 10px;
+    }
+    .next{
+        right: 10px;
+    }
+    .banner_left{
+        width: 35%;
+        background-color: $very-light-color;
+        height: 500px;
+        h2{
+            padding-top: $margin-top;
+            padding-left: $padding-left;
+            color: $dark-color;
+        }
+        ul{
+            padding-left: 40px;
+            margin-top: $margin-top;
+            li{
+                margin-bottom: 5px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            width: 100px;
+            height: 30px;
+            border-radius: 50px;
+            background: $medium-color;
+            padding-left: 10px;
+            padding-top: 5px;
+            margin-top: $margin-top;
+            margin-left: 180px;
+            &:hover{
+                background-color: $light-color;
+                color: $medium-color;
+            }
+        }
+        img{
+            width: 70%;
+            margin-left: 65px;
+            margin-top: 25px;
+            border-radius: 15px;
+        }
+
+    }
+
+}
+// End Banner
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Services
+.services{
+    @include flex-center;
+    width: 100%;
+    gap: 10px; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .services_right{
+        width: 30%;
+        height: 300px;
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        .boredr{
+            border: 2px solid black;
+        }
+        h2{
+            padding-left: $padding-left;
+            margin-top: -280px;
+            margin-right: 15px;
+            color: $dark-color;
+        }
+    }
+    .services_center{
+        background-color: $light-color;
+        width: 40%;
+        height: 300px;
+        h2{
+            color: $dark-color;
+            margin-left: $margin-left;
+            padding-top: 25px;
+            margin-bottom: $margin-bottom;
+        }
+        img{
+            width: 200px;
+            margin-left: 300px;
+            margin-top: -165px;
+        }
+
+        h4{
+            margin-left: 30px 
+        }
+    }
+    .services_left{
+        width: 30%;
+        height: 300px;
+        img{
+            width: 100%;
+            height: 300px;
+        }
+        h2{
+            margin-top: -280px;
+            margin-left: 15px;
+            color: $dark-color; 
+        }
+    }
+}
+// End Services
+// -------------------------------------------------------------------------------------------------------------------------------------
+// Services Info
+.servicesInfo{
+    @include flex-center;
+    width: 100%;
+    gap: 10px;
+    margin-bottom: 60px;
+    .servicesInfo_tem{
+        width: 25%;
+        height: 300px;
+        h2{
+            color: $dark-color;
+            text-align: center;
+            padding-top: 12px;
+            background-color: $very-light-color;
+            margin-bottom: 10px;
+            height: 50px;
+            border-radius: 15px 0 15px 0;
+        }
+        img{
+            width: 100%;
+            height: 300px;
+            border: 2px solid $very-light-color;
+            border-radius: 5px;
+            opacity: 0.8;
+        }
+    }
+}
+// Services Info
+// -----------------------------------------------------------------------------------------------------------------------------------
+// Public Info 
+.public_info_title{
+    width: 100%;
+    h2{
+        color: $dark-color;     
+    }
+}
+    
+.public_info{
+    @include flex-center;
+    width: 100%;
+    gap:10px;
+    .public_info_right{
+        width: 30%;
+        h2{
+            color: $dark-color;
+        }
+        img{
+            width: 100%;
+            margin-top: 25px;
+            height: 268px;
+        }
+        h4{
+            margin-top: -50px;
+            padding-left: $padding-left;
+            color: $white-color;
+            &::first-letter{
+                color: red;
+            }
+        }
+    }
+    .public_info_center{
+        width: 30%;
+        img{
+            width: 100%;
+            margin-top: 25px;
+            height: 273px;
+        }
+    }
+    .public_info_left{
+        width: 30%;
+        img{
+            width: 100%;
+            height: 273px;
+            margin-top: 60px;
+        }
+        h4{
+            margin-top: -50px;
+            padding-left: $padding-left;
+            color: $white-color;
+            &::first-letter{
+                color: red;
+            }
+        }
+    }
+    
+    
+}
+// End Public Info 
+// ------------------------------------------------------------------------------------------------------------------------------------
+// Questions
+.qestions{
+    @include flex-center;
+    width: 100%;
+    gap: 20px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    .qestions_right{
+        width: 50%;
+        h2{
+            color: $dark-color;
+        }   
+        .qestions_right_first{
+            overflow: hidden;
+            margin-top: 15px;
+            background-color: $very-light-color;
+            height: 75px;
+            border-radius: 10px;
+            padding-left: $padding-left;
+            padding-top: 29px;
+            margin-bottom: 15px;
+            &:hover{
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            .par{
+                font-size: 15px;
+                font-weight: lighter
+            }
+            
+            
+        }
+        .qestions_right_second{
+            overflow: hidden;
+            background-color: $very-light-color;
+            height: 75px;
+            border-radius: 10px;
+            padding-left: $padding-right;
+            padding-top: 29px;
+            margin-bottom: 15px;
+            &:hover{
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            .par{
+                font-size: 15px;
+                font-weight: lighter
+            }
+        }
+        .qestions_right_third{
+            overflow: hidden;
+            background-color: $very-light-color;
+            height: 75px;
+            border-radius: 10px;
+            padding-left: $padding-right;
+            padding-top: 29px;
+            margin-bottom: 15px;
+            &:hover{
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            .par{
+                font-size: 15px;
+                font-weight: lighter
+            }
+        }
+
+        
+    }
+    .qestions_left{
+        width: 50%;
+        .qestions_left_first{
+            overflow: hidden;
+            background-color: $very-light-color;
+            margin-top: 45px;
+            height: 75px;
+            border-radius: 10px;
+            padding-left: $padding-right;
+            padding-top: 29px;
+            margin-bottom: 15px;
+            &:hover{
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            .par{
+                font-size: 15px;
+                font-weight: lighter
+            }
+        }
+        .qestions_left_second{
+            overflow: hidden;
+            background-color: $very-light-color;
+            height: 75px;
+            border-radius: 10px;
+            padding-left: $padding-right;
+            padding-top: 29px;
+            margin-bottom: 15px;
+            &:hover{
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            .par{
+                font-size: 15px;
+                font-weight: lighter
+            }
+        }
+        .qestions_left_third{
+            overflow: hidden;
+            background-color: $very-light-color;
+            height: 75px;
+            border-radius: 10px;
+            padding-left: $padding-right;
+            padding-top: 29px;
+            margin-bottom: 15px;
+            &:hover{
+                cursor: pointer;
+                font-weight: bolder;
+            }
+            .par{
+                font-size: 15px;
+                font-weight: lighter
+            }
+        }
+    }
+}
+// End Questions
+// -----------------------------------------------------------------------------------------------------------------------------------
+// Information
+.information{
+    width: 100%;
+    .information_top{
+        height: 150px;
+        text-align: center;
+        padding-top: 50px;
+        background:$medium-color;
+        ul{
+            @include flex-center;
+            list-style: none;
+            li{
+                margin-right: 15px;
+                .link{
+                    display: flex;
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background: $light-color;
+                    padding-left: 7px;
+                    padding-top: 7px;
+                    margin-bottom: 10px;
+                    color: $white-color;
+                    text-decoration: none;
+                    &:hover{
+                        background: lighten($color: $light-color, $amount: 20%);
+                    }
+                }
+                a{
+                    color: $white-color;
+                    text-decoration: none;
+                    &:hover{
+                        color: $light-color;
+                        font-weight: bolder;
+                    }
+                }
+            }
+        }
+    }
+    
+    .information_bottom{
+        height: 45px;
+        text-align: center;
+        background: $light-color;
+        color: $white-color;
+        padding-top: 12px;
+    }
+}
+
+// End Information
